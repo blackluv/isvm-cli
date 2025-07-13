@@ -62,6 +62,12 @@ This will generate an `isvm.config.json` file with your default settings.
 isvm template isvm20
 ```
 
+### 📤 Compile token template
+
+```bash
+isvm compile -s contracts/example.ts -o build/contract.wasm
+```
+
 ### 📤 Deploy a Token Contract
 
 ```bash
