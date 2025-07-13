@@ -92,7 +92,7 @@ You can override CLI config settings using environment variables:
 | `ISVM_RPC_URL`         | Bitcoin RPC URL (`https://...`) |
 | `ISVM_RPC_USER`        | RPC username                    |
 | `ISVM_RPC_PASS`        | RPC password                    |
-| `ISVM_INDEXER_URL`     | ISVM Indexer API (e.g. `https://isvmapi.badrockinc.xyz`) |
+| `ISVM_INDEXER_URL`     | ISVM RPC (e.g. `https://isvmapi.badrockinc.xyz`) |
 | `ISVM_PRIVATE_KEY`     | WIF-format private key          |
 
 ---
