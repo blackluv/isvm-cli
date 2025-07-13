@@ -62,6 +62,12 @@ This will generate an `isvm.config.json` file with your default settings.
 isvm template isvm20
 ```
 
+### 📤 Create directories
+
+```bash
+mkdir contracts build
+```
+
 ### 📤 Compile token template
 
 ```bash
