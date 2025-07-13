@@ -1,20 +1,22 @@
-Documentation
-ISVM CLI - Bitcoin Smart Contract Development Tool
+📘 ISVM CLI - Bitcoin Smart Contract Development Tool
 The ISVM CLI provides a comprehensive toolset for developing, deploying, and interacting with smart contracts on Bitcoin using the ISVM protocol.
 
-Installation
+🚀 Installation
 bash
+Copy
+Edit
 npm install -g assemblyscript
 npm install -g .
-Configuration
-First configure your environment:
+⚙️ Configuration
+Set up your environment:
 
 bash
+Copy
+Edit
 isvm config
-This will create an isvm.config.json file with your settings.
+This will generate an isvm.config.json file with your default settings.
 
-Commands
-Core Commands
+🔧 Core Commands
 Command	Description
 config	Configure ISVM CLI settings
 compile <source>	Compile AssemblyScript to WASM
@@ -25,43 +27,49 @@ state <address>	Get contract state
 events <address>	Get contract events
 watch <address>	Watch contract events in real-time
 list	List deployed contracts
-Advanced Commands
+
+🧠 Advanced Commands
 Command	Description
 template <type>	Generate contract templates
 batch --calls <json>	Execute multiple calls in one transaction
 pause <address>	Pause a contract
 unpause <address>	Unpause a contract
 test -c <address>	Run tests against a contract
-Examples
-Deploy a token contract:
 
+💡 Examples
+📤 Deploy a Token Contract
 bash
+Copy
+Edit
 isvm deploy -f contract.wasm -a '["MyToken", "MTK", 8, 1000000]'
-Call a contract function:
-
+🔁 Call a Contract Function
 bash
+Copy
+Edit
 isvm call -c a1b2c3... -f transfer -p '["tb11234...", 100]'
-Watch events:
-
+👀 Watch Contract Events
 bash
+Copy
+Edit
 isvm watch a1b2c3...
-Batch calls:
-
+📦 Batch Calls
 bash
+Copy
+Edit
 isvm batch -c '[{"contractAddress":"a1b2c3...","functionName":"transfer","params":["tb11234...",100]}]'
-Environment Variables
-You can override config settings with env vars:
+🌐 Environment Variables
+You can override CLI config settings using environment variables:
 
-ISVM_NETWORK: mainnet/testnet/regtest
+Variable	Description
+ISVM_NETWORK	mainnet / testnet / regtest
+ISVM_RPC_URL	Bitcoin RPC URL (https://...)
+ISVM_RPC_USER	RPC username
+ISVM_RPC_PASS	RPC password
+ISVM_INDEXER_URL	ISVM Indexer API (e.g. https://isvmapi.badrockinc.xyz)
+ISVM_PRIVATE_KEY	WIF-format private key
 
-ISVM_RPC_URL: Bitcoin RPC URL
-
-ISVM_RPC_USER: RPC username
-
-ISVM_RPC_PASS: RPC password
-
-ISVM_INDEXER_URL: https://isvmapi.badrockinc.xyz
-
-ISVM_PRIVATE_KEY: WIF private key
-
+🔗 Public Bitcoin Testnet RPC (Optional)
+bash
+Copy
+Edit
 https://bitcoin-testnet-rpc.publicnode.com
