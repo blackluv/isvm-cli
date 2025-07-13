@@ -56,6 +56,12 @@ This will generate an `isvm.config.json` file with your default settings.
 
 ## 💡 Examples
 
+### 📤 Generate token template
+
+```bash
+isvm template isvm20
+```
+
 ### 📤 Deploy a Token Contract
 
 ```bash
