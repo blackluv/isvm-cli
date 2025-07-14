@@ -89,7 +89,6 @@ isvm deploy -f build/contract.wasm -a "[\"yoyo\", \"yol\", 1000000, 8]"
 ```bash
 isvm call -c a1b2c3... -f transfer -p '["tb11234...", 100]'
 ```
-isvm call -c eb80e3398d864bbb4a087bc0cf590de25e5ef17e -f mint -p "[\"tb1q5r0d8hxy4l3s7frfzkmt00pdctnstnerdwsfau\", 100000]"
 
 ```cmd
 isvm call -c eb80e3398d864b...... -f mint -p "[\"tb1q5r0d8.....\", 100000]"
